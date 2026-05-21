@@ -21,6 +21,47 @@
     "title": "All Projects",
     "subtitle": "Learn what each tool does and when to use it"
   },
+  "about_page": {
+    "title": "About Us",
+    "subtitle": "Greater Bay Area Bioinformatics Association",
+    "mission": {
+      "title": "Our Mission",
+      "text": "Building a decentralized bioinformatics learning platform, connecting the bioinformatics ecosystem of the Greater Bay Area with the world."
+    },
+    "activities": {
+      "title": "What We Do",
+      "weworkshop": {
+        "name": "Weworkshop",
+        "desc": "Regular bioinformatics workshops focused on hands-on skills and cutting-edge tools."
+      },
+      "westudy": {
+        "name": "Westudy",
+        "desc": "Collaborative study groups for bioinformatics — learn together, grow together."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "open": {
+        "name": "Open",
+        "desc": "Knowledge knows no borders. Code is open source, learning has no barriers."
+      },
+      "connect": {
+        "name": "Connect",
+        "desc": "Linking bioinformatics researchers and developers across the GBA and beyond."
+      },
+      "grow": {
+        "name": "Grow",
+        "desc": "Progress together through mutual support — help everyone become their best self."
+      }
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "bilibili": "Bilibili Channel",
+      "email": "Email Us",
+      "video": "Watch Intro Video",
+      "wechat": "Follow WeChat Official"
+    }
+  },
   "footer": "Open source, built with love",
   "projects": {
     "aweskill": {

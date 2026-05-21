@@ -21,6 +21,47 @@
     "title": "项目一览",
     "subtitle": "了解每个工具的定位和使用场景"
   },
+  "about_page": {
+    "title": "关于我们",
+    "subtitle": "大湾区生物信息协会",
+    "mission": {
+      "title": "我们的使命",
+      "text": "打造一个去中心化的生信学习平台，链接大湾区与世界的生信生态。"
+    },
+    "activities": {
+      "title": "我们的活动",
+      "weworkshop": {
+        "name": "Weworkshop",
+        "desc": "定期举办的生物信息学工作坊，聚焦实战技能与前沿工具。"
+      },
+      "westudy": {
+        "name": "Westudy",
+        "desc": "共同学习、互相督促的生信学习小组，一起成长。"
+      }
+    },
+    "values": {
+      "title": "我们的价值观",
+      "open": {
+        "name": "开放",
+        "desc": "知识无边界，代码开源，学习无门槛。"
+      },
+      "connect": {
+        "name": "连接",
+        "desc": "链接大湾区与世界的生信研究者与开发者。"
+      },
+      "grow": {
+        "name": "成长",
+        "desc": "在互助中共同进步，让每个人都能成为更好的自己。"
+      }
+    },
+    "contact": {
+      "title": "联系我们",
+      "bilibili": "Bilibili 主页",
+      "email": "邮件联系",
+      "video": "观看介绍视频",
+      "wechat": "关注微信公众号"
+    }
+  },
   "footer": "开源，用爱构建",
   "projects": {
     "aweskill": {
