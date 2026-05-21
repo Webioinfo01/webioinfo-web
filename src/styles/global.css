@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FFB5C2;
+  --color-primary-dark: #FF8FAB;
+  --color-secondary: #D4B5FF;
+  --color-mint: #B5E8D5;
+  --color-cream: #FFF8F0;
+  --color-cream-dark: #F5EDE0;
+  --color-wood: #E8D5B8;
+  --color-wood-dark: #C8B898;
+  --color-text: #5C4033;
+  --color-text-light: #8B7355;
+
+  --font-sans: 'Nunito', 'Noto Sans SC', system-ui, sans-serif;
+  --font-display: 'Fredoka', 'Noto Sans SC', system-ui, sans-serif;
+}
+
+/* Watercolor washes */
+.wc-wash-right::before {
+  content: '';
+  position: fixed;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(ellipse, rgba(255,181,194,0.3) 0%, rgba(212,181,255,0.15) 40%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.wc-wash-left::after {
+  content: '';
+  position: fixed;
+  bottom: -10%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(ellipse, rgba(181,232,213,0.25) 0%, rgba(255,230,200,0.1) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Sticker */
+.sticker {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+}
+
+.sticker:hover {
+  transform: translateY(-8px) rotate(0deg) !important;
+  z-index: 10;
+}
+
+.sticker-body {
+  border-radius: 6px 6px 20px 6px;
+  padding: 32px 24px 28px;
+  position: relative;
+  box-shadow:
+    2px 3px 12px rgba(0,0,0,0.1),
+    0 1px 3px rgba(0,0,0,0.06);
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sticker:hover .sticker-body {
+  box-shadow:
+    4px 6px 24px rgba(0,0,0,0.15),
+    0 2px 6px rgba(0,0,0,0.08);
+}
+
+.sticker-tape {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 64px;
+  height: 22px;
+  background: rgba(255,255,255,0.45);
+  border-radius: 3px;
+  z-index: 2;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+
+.sticker--pink .sticker-body { background: linear-gradient(165deg, #FFF0F3, #FFDDE5); }
+.sticker--lavender .sticker-body { background: linear-gradient(165deg, #F3EDFF, #E4D8FF); }
+.sticker--mint .sticker-body { background: linear-gradient(165deg, #EDFBF3, #D4F5E4); }
+
+.sticker-tag {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.5);
+}
+
+.sticker--pink .sticker-tag { color: #C0506A; }
+.sticker--lavender .sticker-tag { color: #7B5FB0; }
+.sticker--mint .sticker-tag { color: #4A8E6A; }
+
+.sticker-link {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.3s;
+}
+
+.sticker:hover .sticker-link { gap: 8px; }
+.sticker--pink .sticker-link { color: #C0506A; }
+.sticker--lavender .sticker-link { color: #7B5FB0; }
+.sticker--mint .sticker-link { color: #4A8E6A; }
+
+/* Desk surface */
+.desk {
+  background: linear-gradient(135deg, #E8D5B8 0%, #D4C4A8 30%, #DEC9A6 60%, #C8B898 100%);
+  border-radius: 20px;
+  position: relative;
+  box-shadow:
+    inset 0 2px 8px rgba(0,0,0,0.08),
+    0 8px 40px rgba(140,110,70,0.2),
+    0 2px 6px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.desk::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(92deg, transparent, transparent 80px, rgba(160,130,80,0.06) 80px, rgba(160,130,80,0.06) 82px),
+    repeating-linear-gradient(88deg, transparent, transparent 140px, rgba(180,150,100,0.04) 140px, rgba(180,150,100,0.04) 142px);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.desk::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+  pointer-events: none;
+}
+
+/* Detail cards on desk */
+.detail-card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 28px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.5);
+  transition: all 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.detail-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #FF8FAB, #D4B5FF, #B5E8D5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Footer */
+.footer-link {
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--color-primary-dark);
+}

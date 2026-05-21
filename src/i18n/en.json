@@ -1,0 +1,48 @@
+{
+  "site": {
+    "title": "webioinfo",
+    "tagline": "Let AI be your dev team",
+    "description": "We build lightweight, elegant AI developer tools. From skill management to multi-agent collaboration — keep it simple."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "github": "GitHub"
+  },
+  "hero": {
+    "cta_projects": "Explore Projects",
+    "cta_github": "GitHub"
+  },
+  "home_projects": {
+    "title": "Our Projects",
+    "subtitle": "Three open-source tools covering the AI developer workflow"
+  },
+  "projects_page": {
+    "title": "All Projects",
+    "subtitle": "Learn what each tool does and when to use it"
+  },
+  "footer": "Open source, built with love",
+  "projects": {
+    "aweskill": {
+      "name": "aweskill",
+      "desc": "AI agent skill pack manager. Install, bundle, and distribute Claude Skills in one command.",
+      "detail": "Manage your Claude agent capabilities like npm packages — install, bundle, and distribute. Cross-agent compatible with built-in health checks.",
+      "tags": ["Skill Manager", "CLI"],
+      "link": "Learn more"
+    },
+    "aweswitch": {
+      "name": "aweswitch",
+      "desc": "Agent config switcher. Save and switch Claude runtime configs for different scenarios.",
+      "detail": "Save independent Claude Code configs per project or scenario. Switch models, permissions, and env vars in one step.",
+      "tags": ["Config Manager", "Profile"],
+      "link": "Learn more"
+    },
+    "aweteam": {
+      "name": "aweteam",
+      "desc": "AI coding team coordinator. Launch leader-worker multi-agent collaboration in tmux.",
+      "detail": "Launch leader-worker multi-agent collaboration in tmux. Conversations stay in their own panes — traceable and reviewable.",
+      "tags": ["Multi-Agent", "tmux"],
+      "link": "Learn more"
+    }
+  }
+}
