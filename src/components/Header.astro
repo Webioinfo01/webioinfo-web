@@ -9,15 +9,19 @@ const base = lang === 'zh' ? '/zh' : '';
 ---
 
 <header class="sticky top-0 z-50 backdrop-blur-md bg-cream/80 border-b border-primary/10">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <a href={`${base}/`} class="flex items-center gap-2 font-display text-2xl font-bold text-text no-underline">
-      <img src="/logo.png" alt="webioinfo logo" class="h-8 w-8 object-contain" />
-      <span class="text-gradient">webio</span>info
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href={`${base}/`} class="flex items-center gap-2.5 font-semibold text-text no-underline shrink-0">
+      <img src="/logo.png" alt="webioinfo logo" class="h-9 w-9 sm:h-10 sm:w-10 rounded-lg object-contain" />
+      <span class="hidden sm:inline text-xl tracking-tight font-semibold text-gradient">webioinfo</span>
     </a>
-    <nav class="flex items-center gap-7">
-      <a href={`${base}/`} class="text-sm font-semibold no-underline transition-colors text-text-light hover:text-primary-dark">{t.nav.home}</a>
-      <a href={lang === 'zh' ? '/' : '/zh'} class="text-xs font-bold px-3 py-1.5 rounded-full bg-primary/10 text-primary-dark no-underline hover:bg-primary/20 transition-colors">
-        {lang === 'zh' ? 'EN' : '中文'}
+    <nav class="flex items-center gap-1.5 sm:gap-3">
+      <a href={lang === 'zh' ? '/' : '/zh'} class="px-2 py-1 text-sm font-medium text-text-light hover:text-primary-dark transition-colors rounded-md hover:bg-primary/10">
+        {lang === 'zh' ? 'EN' : '中'}
+      </a>
+      <div class="w-px h-5 bg-primary/20"></div>
+      <a href="https://github.com/Webioinfo01" target="_blank" rel="noopener" class="flex items-center gap-2 px-2 sm:px-4 py-2 rounded-lg text-text-light hover:text-primary-dark bg-white/50 border border-primary/15 hover:border-primary/30 transition-all duration-300 group" aria-label="Star on GitHub">
+        <svg class="w-5 h-5 group-hover:scale-110 transition-transform" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+        <span class="text-sm font-mono font-medium hidden sm:inline">Star</span>
       </a>
     </nav>
   </div>
