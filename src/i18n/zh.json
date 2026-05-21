@@ -45,8 +45,11 @@
     "contact": {
       "title": "联系我们",
       "bilibili": "Bilibili 主页",
+      "bilibili_desc": "观看我们的技术分享与活动录像。",
       "email": "邮件联系",
+      "email_desc": "合作或咨询，欢迎来信交流。",
       "video": "观看介绍视频",
+      "video_desc": "快速了解 Webioinfo 的愿景与活动。",
       "wechat": "关注微信公众号"
     }
   },

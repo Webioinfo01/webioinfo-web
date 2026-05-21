@@ -28,6 +28,9 @@
   --t-sticker-lavender: linear-gradient(165deg, #2d2540, #352850);
   --t-sticker-mint: linear-gradient(165deg, #1e3030, #1a3828);
   --t-sticker-peach: linear-gradient(165deg, #3a2a20, #4a3020);
+  --t-sticker-yellow: linear-gradient(165deg, #3a3520, #4a3a10);
+  --t-sticker-sky: linear-gradient(165deg, #1e2a3a, #1a3040);
+  --t-sticker-coral: linear-gradient(165deg, #3a1e28, #4a1520);
   --t-detail-bg: rgba(255,255,255,0.06);
   --t-detail-border: rgba(255,255,255,0.08);
   --t-wash-opacity: 0.15;
@@ -44,6 +47,9 @@
   --t-sticker-lavender: linear-gradient(165deg, #F3EDFF, #E4D8FF);
   --t-sticker-mint: linear-gradient(165deg, #EDFBF3, #D4F5E4);
   --t-sticker-peach: linear-gradient(165deg, #FFF5ED, #FFE8D6);
+  --t-sticker-yellow: linear-gradient(165deg, #FFF8E0, #FFEDAA);
+  --t-sticker-sky: linear-gradient(165deg, #EDF5FF, #C8E0FF);
+  --t-sticker-coral: linear-gradient(165deg, #FFF0F0, #FFD4D4);
   --t-detail-bg: rgba(255,255,255,0.75);
   --t-detail-border: rgba(255,255,255,0.5);
   --t-wash-opacity: 0.3;
@@ -128,6 +134,9 @@
 .sticker--lavender .sticker-body { background: var(--t-sticker-lavender); }
 .sticker--mint .sticker-body { background: var(--t-sticker-mint); }
 .sticker--peach .sticker-body { background: var(--t-sticker-peach); }
+.sticker--yellow .sticker-body { background: var(--t-sticker-yellow); }
+.sticker--sky .sticker-body { background: var(--t-sticker-sky); }
+.sticker--coral .sticker-body { background: var(--t-sticker-coral); }
 
 .sticker-tag {
   padding: 4px 10px;
@@ -141,6 +150,9 @@
 .sticker--lavender .sticker-tag { color: #9B7FD0; }
 .sticker--mint .sticker-tag { color: #5AB88A; }
 .sticker--peach .sticker-tag { color: #D08A4E; }
+.sticker--yellow .sticker-tag { color: #B89A30; }
+.sticker--sky .sticker-tag { color: #4A7AAA; }
+.sticker--coral .sticker-tag { color: #C05050; }
 
 .sticker-link {
   font-family: var(--font-display);
@@ -157,6 +169,9 @@
 .sticker--lavender .sticker-link { color: #9B7FD0; }
 .sticker--mint .sticker-link { color: #5AB88A; }
 .sticker--peach .sticker-link { color: #D08A4E; }
+.sticker--yellow .sticker-link { color: #B89A30; }
+.sticker--sky .sticker-link { color: #4A7AAA; }
+.sticker--coral .sticker-link { color: #C05050; }
 
 /* Desk surface */
 .desk {

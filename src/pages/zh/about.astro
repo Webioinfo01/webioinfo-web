@@ -13,7 +13,7 @@ const a = t.about_page;
     <!-- Title + QR code side by side -->
     <div class="flex flex-col sm:flex-row items-center justify-center gap-8 mb-10">
       <h1 class="font-display text-4xl font-semibold">{a.title}</h1>
-      <div class="sticker sticker--lavender" style="transform: rotate(1.5deg);">
+      <div class="sticker sticker--sky" style="transform: rotate(2deg);">
         <div class="sticker-tape"></div>
         <div class="sticker-body items-center text-center px-6 py-5">
           <p class="text-sm mb-3" style="color: var(--t-text-light);">{a.contact.wechat}</p>
@@ -39,10 +39,10 @@ const a = t.about_page;
         <!-- Values -->
         <div>
           <h2 class="font-display text-xl font-semibold mb-5 text-center">{a.values.title}</h2>
-          <div class="grid grid-rows-3 gap-5">
+          <div class="space-y-5">
             <div class="sticker sticker--mint" style="transform: rotate(1deg);">
               <div class="sticker-tape"></div>
-              <div class="sticker-body h-full">
+              <div class="sticker-body">
                 <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
                   <span>🌍</span> {a.values.open.name}
                 </h3>
@@ -51,7 +51,7 @@ const a = t.about_page;
             </div>
             <div class="sticker sticker--lavender" style="transform: rotate(-1deg);">
               <div class="sticker-tape"></div>
-              <div class="sticker-body h-full">
+              <div class="sticker-body">
                 <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
                   <span>🔗</span> {a.values.connect.name}
                 </h3>
@@ -60,7 +60,7 @@ const a = t.about_page;
             </div>
             <div class="sticker sticker--peach" style="transform: rotate(0.5deg);">
               <div class="sticker-tape"></div>
-              <div class="sticker-body h-full">
+              <div class="sticker-body">
                 <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
                   <span>🌱</span> {a.values.grow.name}
                 </h3>
@@ -73,32 +73,32 @@ const a = t.about_page;
         <!-- Contact -->
         <div>
           <h2 class="font-display text-xl font-semibold mb-5 text-center">{a.contact.title}</h2>
-          <div class="grid grid-rows-3 gap-5">
-            <a href="https://space.bilibili.com/1410491002" target="_blank" rel="noopener" class="sticker sticker--mint" style="transform: rotate(-0.5deg);">
+          <div class="space-y-5">
+            <a href="https://space.bilibili.com/1410491002" target="_blank" rel="noopener" class="sticker sticker--yellow" style="transform: rotate(-1.5deg);">
               <div class="sticker-tape"></div>
-              <div class="sticker-body h-full">
-                <h3 class="font-display text-lg font-semibold mb-1 flex items-center gap-2">
+              <div class="sticker-body">
+                <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
                   <span>📺</span> {a.contact.bilibili}
                 </h3>
-                <p class="text-sm" style="color: var(--t-text-light);">space.bilibili.com/1410491002</p>
+                <p class="text-base leading-7" style="color: var(--t-text-light);">{a.contact.bilibili_desc}</p>
               </div>
             </a>
-            <a href="mailto:mugpeng@outlook.com" class="sticker sticker--pink" style="transform: rotate(1deg);">
+            <a href="mailto:mugpeng@outlook.com" class="sticker sticker--sky" style="transform: rotate(1.5deg);">
               <div class="sticker-tape"></div>
-              <div class="sticker-body h-full">
-                <h3 class="font-display text-lg font-semibold mb-1 flex items-center gap-2">
+              <div class="sticker-body">
+                <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
                   <span>✉️</span> {a.contact.email}
                 </h3>
-                <p class="text-sm" style="color: var(--t-text-light);">mugpeng@outlook.com</p>
+                <p class="text-base leading-7" style="color: var(--t-text-light);">{a.contact.email_desc}</p>
               </div>
             </a>
-            <a href="https://www.bilibili.com/video/BV1vUCNYoEf3" target="_blank" rel="noopener" class="sticker sticker--peach" style="transform: rotate(-1deg);">
+            <a href="https://www.bilibili.com/video/BV1vUCNYoEf3" target="_blank" rel="noopener" class="sticker sticker--coral" style="transform: rotate(-0.8deg);">
               <div class="sticker-tape"></div>
-              <div class="sticker-body h-full">
-                <h3 class="font-display text-lg font-semibold mb-1 flex items-center gap-2">
+              <div class="sticker-body">
+                <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
                   <span>🎬</span> {a.contact.video}
                 </h3>
-                <p class="text-sm" style="color: var(--t-text-light);">BV1vUCNYoEf3</p>
+                <p class="text-base leading-7" style="color: var(--t-text-light);">{a.contact.video_desc}</p>
               </div>
             </a>
           </div>

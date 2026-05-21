@@ -45,8 +45,11 @@
     "contact": {
       "title": "Get in Touch",
       "bilibili": "Bilibili Channel",
+      "bilibili_desc": "Watch our tech talks and event recordings.",
       "email": "Email Us",
+      "email_desc": "For collaboration or inquiries, drop us a line.",
       "video": "Watch Intro Video",
+      "video_desc": "Get a quick overview of Webioinfo's mission and activities.",
       "wechat": "Follow WeChat Official"
     }
   },
