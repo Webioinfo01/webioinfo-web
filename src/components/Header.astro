@@ -2,24 +2,21 @@
 interface Props {
   t: any;
   lang: string;
-  current: 'home' | 'projects';
 }
 
-const { t, lang, current } = Astro.props;
+const { t, lang } = Astro.props;
 const base = lang === 'zh' ? '/zh' : '';
 ---
 
 <header class="sticky top-0 z-50 backdrop-blur-md bg-cream/80 border-b border-primary/10">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
     <a href={`${base}/`} class="flex items-center gap-2 font-display text-2xl font-bold text-text no-underline">
-      <img src="/logo.png" alt="webioinfo logo" class="h-8 w-8 rounded-full object-cover" />
+      <img src="/logo.png" alt="webioinfo logo" class="h-8 w-8 object-contain" />
       <span class="text-gradient">webio</span>info
     </a>
     <nav class="flex items-center gap-7">
-      <a href={`${base}/`} class:list={["text-sm font-semibold no-underline transition-colors", current === 'home' ? 'text-primary-dark' : 'text-text-light hover:text-primary-dark']}>{t.nav.home}</a>
-      <a href={`${base}/projects`} class:list={["text-sm font-semibold no-underline transition-colors", current === 'projects' ? 'text-primary-dark' : 'text-text-light hover:text-primary-dark']}>{t.nav.projects}</a>
-      <a href="https://github.com/Webioinfo01" target="_blank" rel="noopener" class="text-sm font-semibold no-underline text-text-light hover:text-primary-dark transition-colors">{t.nav.github}</a>
-      <a href={current === 'home' ? (lang === 'zh' ? '/' : '/zh') : (lang === 'zh' ? '/projects' : '/zh/projects')} class="text-xs font-bold px-3 py-1.5 rounded-full bg-primary/10 text-primary-dark no-underline hover:bg-primary/20 transition-colors">
+      <a href={`${base}/`} class="text-sm font-semibold no-underline transition-colors text-text-light hover:text-primary-dark">{t.nav.home}</a>
+      <a href={lang === 'zh' ? '/' : '/zh'} class="text-xs font-bold px-3 py-1.5 rounded-full bg-primary/10 text-primary-dark no-underline hover:bg-primary/20 transition-colors">
         {lang === 'zh' ? 'EN' : '中文'}
       </a>
     </nav>

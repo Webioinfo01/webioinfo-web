@@ -11,8 +11,7 @@ const { t } = Astro.props;
     <span class="text-gradient">{t.tagline}</span>
   </h1>
   <p class="text-lg text-text-light max-w-xl mx-auto mb-10 leading-relaxed">{t.description}</p>
-  <div class="flex gap-4 justify-center">
-    <a href="projects" class="inline-block px-9 py-3.5 rounded-full bg-gradient-to-br from-primary-dark to-primary text-white font-bold text-base no-underline shadow-lg shadow-primary/30 hover:-translate-y-0.5 hover:shadow-xl transition-all">{t.cta_projects}</a>
-    <a href="https://github.com/Webioinfo01" target="_blank" rel="noopener" class="inline-block px-9 py-3.5 rounded-full bg-white/70 text-text font-bold text-base no-underline border-2 border-primary/30 hover:bg-white/90 hover:border-primary transition-all">{t.cta_github}</a>
+  <div class="flex justify-center">
+    <a href="#projects" class="inline-block px-9 py-3.5 rounded-full bg-gradient-to-br from-primary-dark to-primary text-white font-bold text-base no-underline shadow-lg shadow-primary/30 hover:-translate-y-0.5 hover:shadow-xl transition-all">{t.cta_projects}</a>
   </div>
 </section>
