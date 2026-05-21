@@ -43,6 +43,13 @@
       "detail": "Launch leader-worker multi-agent collaboration in tmux. Conversations stay in their own panes — traceable and reviewable.",
       "tags": ["Multi-Agent", "tmux"],
       "link": "Learn more"
+    },
+    "awecolor": {
+      "name": "awecolor",
+      "desc": "Colorize hex color codes in text. Preview and beautify color values in your terminal.",
+      "detail": "Instantly preview hex color codes in your terminal output. Supports named colors and custom palettes.",
+      "tags": ["CLI", "Colors"],
+      "link": "Learn more"
     }
   }
 }

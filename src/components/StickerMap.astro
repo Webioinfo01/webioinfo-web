@@ -11,6 +11,7 @@ const cards = [
   { key: 'aweskill', color: 'pink', icon: '📦', rotate: '-2deg', tapeRotate: '-2deg', href: 'https://github.com/Webioinfo01/aweskill' },
   { key: 'aweswitch', color: 'lavender', icon: '🔀', rotate: '1.5deg', tapeRotate: '3deg', href: 'https://github.com/Webioinfo01/aweswitch' },
   { key: 'aweteam', color: 'mint', icon: '👥', rotate: '-1deg', tapeRotate: '-4deg', href: 'https://github.com/Webioinfo01/aweteam' },
+  { key: 'awecolor', color: 'peach', icon: '🎨', rotate: '2deg', tapeRotate: '1deg', href: 'https://github.com/Webioinfo01/awecolor' },
 ];
 ---
 
@@ -18,7 +19,7 @@ const cards = [
   <h2 class="text-center font-display text-3xl font-semibold mb-2">{title}</h2>
   <p class="text-center text-base md:text-lg text-text-light mb-10">{subtitle}</p>
   <div class="desk max-w-5xl mx-auto p-12 md:p-16">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
       {cards.map(({ key, color, icon, rotate, tapeRotate, href }) => (
         <a href={href} data-confirm="true" class={`sticker sticker--${color}`} style={`transform: rotate(${rotate});`}>
           <div class="sticker-body">

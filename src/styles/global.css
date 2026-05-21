@@ -89,6 +89,7 @@
 .sticker--pink .sticker-body { background: linear-gradient(165deg, #FFF0F3, #FFDDE5); }
 .sticker--lavender .sticker-body { background: linear-gradient(165deg, #F3EDFF, #E4D8FF); }
 .sticker--mint .sticker-body { background: linear-gradient(165deg, #EDFBF3, #D4F5E4); }
+.sticker--peach .sticker-body { background: linear-gradient(165deg, #FFF5ED, #FFE8D6); }
 
 .sticker-tag {
   padding: 4px 10px;
@@ -101,6 +102,7 @@
 .sticker--pink .sticker-tag { color: #C0506A; }
 .sticker--lavender .sticker-tag { color: #7B5FB0; }
 .sticker--mint .sticker-tag { color: #4A8E6A; }
+.sticker--peach .sticker-tag { color: #C07A3E; }
 
 .sticker-link {
   font-family: var(--font-display);
@@ -116,6 +118,7 @@
 .sticker--pink .sticker-link { color: #C0506A; }
 .sticker--lavender .sticker-link { color: #7B5FB0; }
 .sticker--mint .sticker-link { color: #4A8E6A; }
+.sticker--peach .sticker-link { color: #C07A3E; }
 
 /* Desk surface */
 .desk {

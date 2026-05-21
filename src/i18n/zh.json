@@ -43,6 +43,13 @@
       "detail": "在 tmux 中启动 leader-worker 多 agent 协作，对话保留在各自的 pane 中，可追踪、可审查。",
       "tags": ["多 Agent", "tmux"],
       "link": "了解更多"
+    },
+    "awecolor": {
+      "name": "awecolor",
+      "desc": "终端十六进制颜色预览工具。让颜色代码在终端中可视化显示。",
+      "detail": "在终端输出中即时预览十六进制颜色代码，支持命名颜色和自定义调色板。",
+      "tags": ["CLI", "颜色"],
+      "link": "了解更多"
     }
   }
 }
