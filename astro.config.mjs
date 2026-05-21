@@ -3,7 +3,8 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://webioinfo.top',
+  site: 'https://webioinfo01.github.io',
+  base: '/webioinfo-web',
   vite: {
     plugins: [tailwindcss()],
   },
