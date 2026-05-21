@@ -17,7 +17,7 @@ const cards = [
 
 <div id="projects" class="px-6 py-10 relative z-10 scroll-mt-20">
   <h2 class="text-center font-display text-3xl font-semibold mb-2">{title}</h2>
-  <p class="text-center text-base md:text-lg text-text-light mb-10">{subtitle}</p>
+  <p class="text-center text-base md:text-lg mb-10" style="color: var(--t-text-light);">{subtitle}</p>
   <div class="desk max-w-5xl mx-auto p-12 md:p-16">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
       {cards.map(({ key, color, icon, rotate, tapeRotate, href }) => (
@@ -26,7 +26,7 @@ const cards = [
             <div class="sticker-tape" style={`transform: translateX(-50%) rotate(${tapeRotate});`}></div>
             <div class="text-3xl mb-4">{icon}</div>
             <div class="font-display text-xl font-semibold mb-2.5">{projects[key].name}</div>
-            <div class="text-sm leading-relaxed text-text-light flex-1 mb-4">{projects[key].desc}</div>
+            <div class="text-sm leading-relaxed flex-1 mb-4" style="color: var(--t-text-light);">{projects[key].desc}</div>
             <div class="flex flex-wrap gap-1.5 mb-3.5">
               {projects[key].tags.map((tag: string) => (
                 <span class="sticker-tag">{tag}</span>

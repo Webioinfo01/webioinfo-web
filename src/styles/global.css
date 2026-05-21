@@ -16,6 +16,45 @@
   --font-display: 'Fredoka', 'Noto Sans SC', system-ui, sans-serif;
 }
 
+/* ── Runtime theme variables (dark default) ── */
+:root {
+  --t-bg: #1a1520;
+  --t-text: #f0ece4;
+  --t-text-light: #b8a890;
+  --t-border: rgba(255,255,255,0.1);
+  --t-header-bg: rgba(26,21,32,0.85);
+  --t-sticker-tape: rgba(255,255,255,0.15);
+  --t-sticker-pink: linear-gradient(165deg, #3a2530, #4a2035);
+  --t-sticker-lavender: linear-gradient(165deg, #2d2540, #352850);
+  --t-sticker-mint: linear-gradient(165deg, #1e3030, #1a3828);
+  --t-sticker-peach: linear-gradient(165deg, #3a2a20, #4a3020);
+  --t-detail-bg: rgba(255,255,255,0.06);
+  --t-detail-border: rgba(255,255,255,0.08);
+  --t-wash-opacity: 0.15;
+}
+
+.light {
+  --t-bg: #FFF8F0;
+  --t-text: #5C4033;
+  --t-text-light: #8B7355;
+  --t-border: rgba(92,64,51,0.1);
+  --t-header-bg: rgba(255,248,240,0.8);
+  --t-sticker-tape: rgba(255,255,255,0.45);
+  --t-sticker-pink: linear-gradient(165deg, #FFF0F3, #FFDDE5);
+  --t-sticker-lavender: linear-gradient(165deg, #F3EDFF, #E4D8FF);
+  --t-sticker-mint: linear-gradient(165deg, #EDFBF3, #D4F5E4);
+  --t-sticker-peach: linear-gradient(165deg, #FFF5ED, #FFE8D6);
+  --t-detail-bg: rgba(255,255,255,0.75);
+  --t-detail-border: rgba(255,255,255,0.5);
+  --t-wash-opacity: 0.3;
+}
+
+/* Theme toggle icons */
+.dark-icon { display: none; }
+.light-icon { display: block; }
+.light .dark-icon { display: block; }
+.light .light-icon { display: none; }
+
 /* Watercolor washes */
 .wc-wash-right::before {
   content: '';
@@ -24,7 +63,7 @@
   right: -10%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(ellipse, rgba(255,181,194,0.3) 0%, rgba(212,181,255,0.15) 40%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(255,181,194,var(--t-wash-opacity)) 0%, rgba(212,181,255,calc(var(--t-wash-opacity)*0.5)) 40%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -36,7 +75,7 @@
   left: -5%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(ellipse, rgba(181,232,213,0.25) 0%, rgba(255,230,200,0.1) 50%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(181,232,213,calc(var(--t-wash-opacity)*0.8)) 0%, rgba(255,230,200,calc(var(--t-wash-opacity)*0.3)) 50%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -79,16 +118,16 @@
   transform: translateX(-50%) rotate(-2deg);
   width: 64px;
   height: 22px;
-  background: rgba(255,255,255,0.45);
+  background: var(--t-sticker-tape);
   border-radius: 3px;
   z-index: 2;
   box-shadow: 0 1px 2px rgba(0,0,0,0.06);
 }
 
-.sticker--pink .sticker-body { background: linear-gradient(165deg, #FFF0F3, #FFDDE5); }
-.sticker--lavender .sticker-body { background: linear-gradient(165deg, #F3EDFF, #E4D8FF); }
-.sticker--mint .sticker-body { background: linear-gradient(165deg, #EDFBF3, #D4F5E4); }
-.sticker--peach .sticker-body { background: linear-gradient(165deg, #FFF5ED, #FFE8D6); }
+.sticker--pink .sticker-body { background: var(--t-sticker-pink); }
+.sticker--lavender .sticker-body { background: var(--t-sticker-lavender); }
+.sticker--mint .sticker-body { background: var(--t-sticker-mint); }
+.sticker--peach .sticker-body { background: var(--t-sticker-peach); }
 
 .sticker-tag {
   padding: 4px 10px;
@@ -99,9 +138,9 @@
 }
 
 .sticker--pink .sticker-tag { color: #C0506A; }
-.sticker--lavender .sticker-tag { color: #7B5FB0; }
-.sticker--mint .sticker-tag { color: #4A8E6A; }
-.sticker--peach .sticker-tag { color: #C07A3E; }
+.sticker--lavender .sticker-tag { color: #9B7FD0; }
+.sticker--mint .sticker-tag { color: #5AB88A; }
+.sticker--peach .sticker-tag { color: #D08A4E; }
 
 .sticker-link {
   font-family: var(--font-display);
@@ -115,20 +154,28 @@
 
 .sticker:hover .sticker-link { gap: 8px; }
 .sticker--pink .sticker-link { color: #C0506A; }
-.sticker--lavender .sticker-link { color: #7B5FB0; }
-.sticker--mint .sticker-link { color: #4A8E6A; }
-.sticker--peach .sticker-link { color: #C07A3E; }
+.sticker--lavender .sticker-link { color: #9B7FD0; }
+.sticker--mint .sticker-link { color: #5AB88A; }
+.sticker--peach .sticker-link { color: #D08A4E; }
 
 /* Desk surface */
 .desk {
-  background: linear-gradient(135deg, #E8D5B8 0%, #D4C4A8 30%, #DEC9A6 60%, #C8B898 100%);
+  background: linear-gradient(135deg, #2a2030 0%, #252030 30%, #302838 60%, #282030 100%);
   border-radius: 20px;
   position: relative;
   box-shadow:
     inset 0 2px 8px rgba(0,0,0,0.08),
-    0 8px 40px rgba(140,110,70,0.2),
+    0 8px 40px rgba(0,0,0,0.3),
     0 2px 6px rgba(0,0,0,0.06);
   overflow: hidden;
+}
+
+.light .desk {
+  background: linear-gradient(135deg, #E8D5B8 0%, #D4C4A8 30%, #DEC9A6 60%, #C8B898 100%);
+  box-shadow:
+    inset 0 2px 8px rgba(0,0,0,0.08),
+    0 8px 40px rgba(140,110,70,0.2),
+    0 2px 6px rgba(0,0,0,0.06);
 }
 
 .desk::before {
@@ -158,9 +205,9 @@
   align-items: flex-start;
   padding: 28px;
   border-radius: 8px;
-  background: rgba(255,255,255,0.75);
+  background: var(--t-detail-bg);
   backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 1px solid var(--t-detail-border);
   transition: all 0.3s;
   text-decoration: none;
   color: inherit;
@@ -181,7 +228,7 @@
 
 /* Footer */
 .footer-link {
-  color: var(--color-text-light);
+  color: var(--t-text-light);
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
