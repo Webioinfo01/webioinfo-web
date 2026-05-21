@@ -23,21 +23,9 @@
   },
   "about_page": {
     "title": "关于我们",
-    "subtitle": "大湾区生物信息协会",
     "mission": {
       "title": "我们的使命",
-      "text": "打造一个去中心化的生信学习平台，链接大湾区与世界的生信生态。"
-    },
-    "activities": {
-      "title": "我们的活动",
-      "weworkshop": {
-        "name": "Weworkshop",
-        "desc": "定期举办的生物信息学工作坊，聚焦实战技能与前沿工具。"
-      },
-      "westudy": {
-        "name": "Westudy",
-        "desc": "共同学习、互相督促的生信学习小组，一起成长。"
-      }
+      "text": "Webioinfo 是一个由社区驱动的生物信息学学习平台，致力于打造开放、协作的生信技术社区。我们通过定期举办 Weworkshop 实战工作坊和 Westudy 学习小组，汇聚大湾区及全球的生信研究者与开发者，共同探索前沿工具与方法，推动生信知识的共享与传播。"
     },
     "values": {
       "title": "我们的价值观",

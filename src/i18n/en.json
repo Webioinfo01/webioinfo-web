@@ -23,21 +23,9 @@
   },
   "about_page": {
     "title": "About Us",
-    "subtitle": "Greater Bay Area Bioinformatics Association",
     "mission": {
       "title": "Our Mission",
-      "text": "Building a decentralized bioinformatics learning platform, connecting the bioinformatics ecosystem of the Greater Bay Area with the world."
-    },
-    "activities": {
-      "title": "What We Do",
-      "weworkshop": {
-        "name": "Weworkshop",
-        "desc": "Regular bioinformatics workshops focused on hands-on skills and cutting-edge tools."
-      },
-      "westudy": {
-        "name": "Westudy",
-        "desc": "Collaborative study groups for bioinformatics — learn together, grow together."
-      }
+      "text": "Webioinfo is a community-driven bioinformatics learning platform dedicated to building an open, collaborative bioinformatics community. Through regular Weworkshop hands-on workshops and Westudy study groups, we bring together researchers and developers from the Greater Bay Area and beyond to explore cutting-edge tools and methods, advancing the sharing and dissemination of bioinformatics knowledge."
     },
     "values": {
       "title": "Our Values",

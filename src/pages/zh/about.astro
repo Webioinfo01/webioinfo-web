@@ -9,11 +9,10 @@ const a = t.about_page;
 
 <Layout title="关于我们 — webioinfo" lang="zh">
   <Header t={t} lang="zh" current="about" />
-  <main class="max-w-3xl mx-auto px-6 pt-16 pb-12 relative z-10">
-    <h1 class="text-center font-display text-4xl font-semibold mb-2">{a.title}</h1>
-    <p class="text-center text-text-light text-lg mb-10">{a.subtitle}</p>
+  <main class="max-w-5xl mx-auto px-6 pt-16 pb-12 relative z-10">
+    <h1 class="text-center font-display text-4xl font-semibold mb-10">{a.title}</h1>
 
-    <div class="desk p-10 md:p-14 space-y-10">
+    <div class="desk p-10 md:p-14 space-y-8">
       <!-- Mission -->
       <div class="sticker sticker--pink" style="transform: rotate(-0.5deg);">
         <div class="sticker-tape"></div>
@@ -25,82 +24,72 @@ const a = t.about_page;
         </div>
       </div>
 
-      <!-- Activities -->
-      <div>
-        <h2 class="font-display text-xl font-semibold mb-5 text-center">{a.activities.title}</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="sticker sticker--mint" style="transform: rotate(1deg);">
-            <div class="sticker-tape"></div>
-            <div class="sticker-body">
-              <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
-                <span>🔬</span> {a.activities.weworkshop.name}
-              </h3>
-              <p class="text-text-light text-base leading-7">{a.activities.weworkshop.desc}</p>
+      <!-- Values + Contact side by side -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Values -->
+        <div>
+          <h2 class="font-display text-xl font-semibold mb-5 text-center">{a.values.title}</h2>
+          <div class="space-y-5">
+            <div class="sticker sticker--mint" style="transform: rotate(1deg);">
+              <div class="sticker-tape"></div>
+              <div class="sticker-body">
+                <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
+                  <span>🌍</span> {a.values.open.name}
+                </h3>
+                <p class="text-text-light text-base leading-7">{a.values.open.desc}</p>
+              </div>
             </div>
-          </div>
-          <div class="sticker sticker--lavender" style="transform: rotate(-1deg);">
-            <div class="sticker-tape"></div>
-            <div class="sticker-body">
-              <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
-                <span>📚</span> {a.activities.westudy.name}
-              </h3>
-              <p class="text-text-light text-base leading-7">{a.activities.westudy.desc}</p>
+            <div class="sticker sticker--lavender" style="transform: rotate(-1deg);">
+              <div class="sticker-tape"></div>
+              <div class="sticker-body">
+                <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
+                  <span>🔗</span> {a.values.connect.name}
+                </h3>
+                <p class="text-text-light text-base leading-7">{a.values.connect.desc}</p>
+              </div>
+            </div>
+            <div class="sticker sticker--peach" style="transform: rotate(0.5deg);">
+              <div class="sticker-tape"></div>
+              <div class="sticker-body">
+                <h3 class="font-display text-lg font-semibold mb-2 flex items-center gap-2">
+                  <span>🌱</span> {a.values.grow.name}
+                </h3>
+                <p class="text-text-light text-base leading-7">{a.values.grow.desc}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Values -->
-      <div>
-        <h2 class="font-display text-xl font-semibold mb-5 text-center">{a.values.title}</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div class="detail-card flex-col items-center text-center">
-            <span class="text-3xl mb-2">🌍</span>
-            <h3 class="font-display text-base font-semibold mb-1">{a.values.open.name}</h3>
-            <p class="text-text-light text-sm leading-6">{a.values.open.desc}</p>
+        <!-- Contact -->
+        <div>
+          <h2 class="font-display text-xl font-semibold mb-5 text-center">{a.contact.title}</h2>
+          <div class="space-y-3 mb-6">
+            <a href="https://space.bilibili.com/1410491002" target="_blank" rel="noopener" class="detail-card">
+              <span class="text-2xl shrink-0">📺</span>
+              <div>
+                <h3 class="font-display text-base font-semibold">{a.contact.bilibili}</h3>
+                <p class="text-text-light text-sm">space.bilibili.com/1410491002</p>
+              </div>
+            </a>
+            <a href="mailto:mugpeng@outlook.com" class="detail-card">
+              <span class="text-2xl shrink-0">✉️</span>
+              <div>
+                <h3 class="font-display text-base font-semibold">{a.contact.email}</h3>
+                <p class="text-text-light text-sm">mugpeng@outlook.com</p>
+              </div>
+            </a>
+            <a href="https://www.bilibili.com/video/BV1vUCNYoEf3" target="_blank" rel="noopener" class="detail-card">
+              <span class="text-2xl shrink-0">🎬</span>
+              <div>
+                <h3 class="font-display text-base font-semibold">{a.contact.video}</h3>
+                <p class="text-text-light text-sm">BV1vUCNYoEf3</p>
+              </div>
+            </a>
           </div>
-          <div class="detail-card flex-col items-center text-center">
-            <span class="text-3xl mb-2">🔗</span>
-            <h3 class="font-display text-base font-semibold mb-1">{a.values.connect.name}</h3>
-            <p class="text-text-light text-sm leading-6">{a.values.connect.desc}</p>
+          <div class="text-center">
+            <p class="text-sm text-text-light mb-3">{a.contact.wechat}</p>
+            <img src="/qr.jpg" alt="微信公众号二维码" class="mx-auto rounded-xl w-40 h-40 object-cover shadow-md border-2 border-white/60" />
           </div>
-          <div class="detail-card flex-col items-center text-center">
-            <span class="text-3xl mb-2">🌱</span>
-            <h3 class="font-display text-base font-semibold mb-1">{a.values.grow.name}</h3>
-            <p class="text-text-light text-sm leading-6">{a.values.grow.desc}</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact -->
-      <div>
-        <h2 class="font-display text-xl font-semibold mb-5 text-center">{a.contact.title}</h2>
-        <div class="space-y-3 mb-6">
-          <a href="https://space.bilibili.com/1410491002" target="_blank" rel="noopener" class="detail-card">
-            <span class="text-2xl shrink-0">📺</span>
-            <div>
-              <h3 class="font-display text-base font-semibold">{a.contact.bilibili}</h3>
-              <p class="text-text-light text-sm">space.bilibili.com/1410491002</p>
-            </div>
-          </a>
-          <a href="mailto:mugpeng@outlook.com" class="detail-card">
-            <span class="text-2xl shrink-0">✉️</span>
-            <div>
-              <h3 class="font-display text-base font-semibold">{a.contact.email}</h3>
-              <p class="text-text-light text-sm">mugpeng@outlook.com</p>
-            </div>
-          </a>
-          <a href="https://www.bilibili.com/video/BV1vUCNYoEf3" target="_blank" rel="noopener" class="detail-card">
-            <span class="text-2xl shrink-0">🎬</span>
-            <div>
-              <h3 class="font-display text-base font-semibold">{a.contact.video}</h3>
-              <p class="text-text-light text-sm">BV1vUCNYoEf3</p>
-            </div>
-          </a>
-        </div>
-        <div class="text-center">
-          <p class="text-sm text-text-light mb-3">{a.contact.wechat}</p>
-          <img src="/qr.jpg" alt="微信公众号二维码" class="mx-auto rounded-xl w-40 h-40 object-cover shadow-md border-2 border-white/60" />
         </div>
       </div>
     </div>

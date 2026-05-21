@@ -22,7 +22,7 @@ const cards = [
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
       {cards.map(({ key, color, icon, rotate, tapeRotate, href }) => (
         <a href={href} data-confirm="true" class={`sticker sticker--${color}`} style={`transform: rotate(${rotate});`}>
-          <div class="sticker-body">
+          <div class="sticker-body min-h-60">
             <div class="sticker-tape" style={`transform: translateX(-50%) rotate(${tapeRotate});`}></div>
             <div class="text-3xl mb-4">{icon}</div>
             <div class="font-display text-xl font-semibold mb-2.5">{projects[key].name}</div>
