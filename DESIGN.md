@@ -14,25 +14,30 @@ colors:
   text-light: "#8B7355"
 typography:
   display:
-    fontFamily: Fredoka, Noto Sans SC, system-ui, sans-serif
+    fontFamily: Sora, Noto Sans SC, system-ui, sans-serif
     fontSize: 48px
     fontWeight: "700"
     lineHeight: 56px
   heading:
-    fontFamily: Fredoka, Noto Sans SC, system-ui, sans-serif
+    fontFamily: Sora, Noto Sans SC, system-ui, sans-serif
     fontSize: 32px
     fontWeight: "600"
     lineHeight: 40px
   body:
-    fontFamily: Nunito, Noto Sans SC, system-ui, sans-serif
+    fontFamily: Sora, Noto Sans SC, system-ui, sans-serif
     fontSize: 16px
     fontWeight: "400"
     lineHeight: 24px
   label:
-    fontFamily: Nunito, Noto Sans SC, system-ui, sans-serif
+    fontFamily: Sora, Noto Sans SC, system-ui, sans-serif
     fontSize: 12px
     fontWeight: "600"
     lineHeight: 16px
+  code:
+    fontFamily: JetBrains Mono, Fira Code, monospace
+    fontSize: 14px
+    fontWeight: "500"
+    lineHeight: 20px
 rounded:
   sm: 6px
   DEFAULT: 8px
@@ -89,7 +94,7 @@ The palette is warm pastels on a cream background — soft pinks, lavenders, and
 
 ## Typography
 
-Fredoka for display and headings — rounded, friendly, distinctive. It signals "approachable tech" without being childish. Nunito for body text — clean, highly legible, pairs well with Fredoka's rounded geometry. Noto Sans SC as fallback for Chinese characters.
+Sora for all text — geometric, modern, excellent legibility at all sizes. Clean and technical without being cold. Noto Sans SC as fallback for Chinese characters. JetBrains Mono for code blocks.
 
 ## Layout
 
@@ -134,7 +139,7 @@ The hero tagline uses a three-color gradient (pink → lavender → mint) clippe
 - **Do** keep the warm, pastel palette — it's the brand's defining trait.
 - **Do** use the sticker/desk metaphor for any new project showcase.
 - **Do** maintain the bilingual (en/zh) structure when adding pages.
-- **Do** use Fredoka for anything the user reads as a heading or label.
+- **Do** use Sora for all text — headings, body, and labels.
 - **Don't** use pure black (#000) anywhere — always the warm brown text colors.
 - **Don't** add client-side JavaScript — this is a zero-JS static site.
 - **Don't** break the single-column, centered layout pattern.
