@@ -12,8 +12,9 @@
   --color-text: #5C4033;
   --color-text-light: #8B7355;
 
-  --font-sans: 'Nunito', 'Noto Sans SC', system-ui, sans-serif;
-  --font-display: 'Fredoka', 'Noto Sans SC', system-ui, sans-serif;
+  --font-sans: 'Sora', 'Noto Sans SC', system-ui, sans-serif;
+  --font-display: 'Sora', 'Noto Sans SC', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 }
 
 /* ── Runtime theme variables (dark default) ── */
