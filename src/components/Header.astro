@@ -28,6 +28,10 @@ langHref = withBase(langHref);
       <span class="hidden sm:inline text-xl tracking-tight font-semibold" style="color: var(--t-text);">webioinfo</span>
     </a>
     <nav class="flex items-center gap-1.5 sm:gap-3">
+      <a href={homeHref} class="px-2 py-1 text-sm font-medium transition-colors rounded-md hover:bg-primary/10" style="color: var(--t-text-light);">
+        {lang === 'zh' ? '首页' : 'Home'}
+      </a>
+      <div class="w-px h-5" style="background: var(--t-border);"></div>
       <a href={withBase(lang === 'zh' ? '/zh/about' : '/about')} class="px-2 py-1 text-sm font-medium transition-colors rounded-md hover:bg-primary/10" style="color: var(--t-text-light);">
         {lang === 'zh' ? '关于' : 'About'}
       </a>
