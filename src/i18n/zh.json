@@ -62,6 +62,13 @@
       "tags": ["Skill 管理", "CLI"],
       "link": "了解更多"
     },
+    "awescholar": {
+      "name": "awescholar",
+      "desc": "科学文献发现与策展 CLI。搜索、标注、筛选、报告学术论文。",
+      "detail": "自动化论文策展流程：查询 Semantic Scholar，LLM 标注，质量筛选，生成 Markdown 报告。",
+      "tags": ["科研", "CLI"],
+      "link": "了解更多"
+    },
     "aweswitch": {
       "name": "aweswitch",
       "desc": "Agent 配置切换器。为不同场景保存和切换 Claude 运行时配置。",

@@ -62,6 +62,13 @@
       "tags": ["Skill Manager", "CLI"],
       "link": "Learn more"
     },
+    "awescholar": {
+      "name": "awescholar",
+      "desc": "Scientific literature discovery and curation CLI. Search, annotate, filter, and report on academic papers.",
+      "detail": "Automated paper curation workflow: query Semantic Scholar, annotate with LLM, filter by quality, generate Markdown reports.",
+      "tags": ["Research", "CLI"],
+      "link": "Learn more"
+    },
     "aweswitch": {
       "name": "aweswitch",
       "desc": "Agent config switcher. Save and switch Claude runtime configs for different scenarios.",
