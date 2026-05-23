@@ -19,8 +19,8 @@ const cards = [
 <div id="projects" class="px-6 py-10 relative z-10 scroll-mt-20">
   <h2 class="text-center font-display text-3xl font-semibold mb-2">{title}</h2>
   <p class="text-center text-base md:text-lg mb-10" style="color: var(--t-text-light);">{subtitle}</p>
-  <div class="desk max-w-5xl mx-auto p-12 md:p-16">
-    <div class="sticker-grid grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+  <div class="desk max-w-6xl mx-auto p-12 md:p-16">
+    <div class="sticker-grid relative z-10">
       {cards.map(({ key, color, icon, rotate, tapeRotate, href }) => (
         <a href={href} target="_blank" rel="noopener" class={`sticker sticker--${color}`} style={`transform: rotate(${rotate});`}>
           <div class="sticker-body min-h-60">
@@ -42,10 +42,26 @@ const cards = [
 </div>
 
 <style>
+  .sticker-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
   @media (min-width: 768px) {
-    .sticker-grid > :last-child {
-      justify-self: center;
-      max-width: calc(50% - 1rem);
+    .sticker-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .sticker-grid > :nth-child(1),
+    .sticker-grid > :nth-child(2),
+    .sticker-grid > :nth-child(3) {
+      grid-column: span 2;
+    }
+    .sticker-grid > :nth-child(4) {
+      grid-column: 2 / span 2;
+    }
+    .sticker-grid > :nth-child(5) {
+      grid-column: 4 / span 2;
     }
   }
 </style>
