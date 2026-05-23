@@ -21,7 +21,7 @@ const cards = [
   <div class="desk max-w-5xl mx-auto p-12 md:p-16">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
       {cards.map(({ key, color, icon, rotate, tapeRotate, href }) => (
-        <a href={href} data-confirm="true" class={`sticker sticker--${color}`} style={`transform: rotate(${rotate});`}>
+        <a href={href} target="_blank" rel="noopener" class={`sticker sticker--${color}`} style={`transform: rotate(${rotate});`}>
           <div class="sticker-body min-h-60">
             <div class="sticker-tape" style={`transform: translateX(-50%) rotate(${tapeRotate});`}></div>
             <div class="text-3xl mb-4">{icon}</div>
@@ -39,13 +39,3 @@ const cards = [
     </div>
   </div>
 </div>
-
-<script>
-  document.querySelectorAll('[data-confirm]').forEach(el => {
-    el.addEventListener('click', e => {
-      if (!confirm('即将跳转到 GitHub 页面，是否继续？')) {
-        e.preventDefault();
-      }
-    });
-  });
-</script>
