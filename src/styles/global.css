@@ -32,6 +32,7 @@
   --t-sticker-yellow: linear-gradient(165deg, #3a3520, #4a3a10);
   --t-sticker-sky: linear-gradient(165deg, #1e2a3a, #1a3040);
   --t-sticker-coral: linear-gradient(165deg, #3a1e28, #4a1520);
+  --t-sticker-sage: linear-gradient(165deg, #2a3028, #1e3830);
   --t-detail-bg: rgba(255,255,255,0.06);
   --t-detail-border: rgba(255,255,255,0.08);
   --t-wash-opacity: 0.15;
@@ -51,6 +52,7 @@
   --t-sticker-yellow: linear-gradient(165deg, #FFF8E0, #FFEDAA);
   --t-sticker-sky: linear-gradient(165deg, #EDF5FF, #C8E0FF);
   --t-sticker-coral: linear-gradient(165deg, #FFF0F0, #FFD4D4);
+  --t-sticker-sage: linear-gradient(165deg, #EFF5EF, #D4E8D4);
   --t-detail-bg: rgba(255,255,255,0.75);
   --t-detail-border: rgba(255,255,255,0.5);
   --t-wash-opacity: 0.3;
@@ -138,6 +140,7 @@
 .sticker--yellow .sticker-body { background: var(--t-sticker-yellow); }
 .sticker--sky .sticker-body { background: var(--t-sticker-sky); }
 .sticker--coral .sticker-body { background: var(--t-sticker-coral); }
+.sticker--sage .sticker-body { background: var(--t-sticker-sage); }
 
 .sticker-tag {
   padding: 4px 10px;
@@ -154,6 +157,7 @@
 .sticker--yellow .sticker-tag { color: #B89A30; }
 .sticker--sky .sticker-tag { color: #4A7AAA; }
 .sticker--coral .sticker-tag { color: #C05050; }
+.sticker--sage .sticker-tag { color: #5A8A5A; }
 
 .sticker-link {
   font-family: var(--font-display);
@@ -173,6 +177,7 @@
 .sticker--yellow .sticker-link { color: #B89A30; }
 .sticker--sky .sticker-link { color: #4A7AAA; }
 .sticker--coral .sticker-link { color: #C05050; }
+.sticker--sage .sticker-link { color: #5A8A5A; }
 
 /* Desk surface */
 .desk {

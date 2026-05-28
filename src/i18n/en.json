@@ -69,6 +69,13 @@
       "tags": ["Research", "CLI"],
       "link": "Learn more"
     },
+    "aweshelf": {
+      "name": "aweshelf",
+      "desc": "Session bookmark manager. Save, categorize, and restore AI coding sessions with aweswitch profiles.",
+      "detail": "Bookmark Claude Code and Codex sessions with title and category. Resume sessions with aweswitch profile restoration, browse interactively in a TUI.",
+      "tags": ["Session", "CLI"],
+      "link": "Learn more"
+    },
     "aweswitch": {
       "name": "aweswitch",
       "desc": "Agent config switcher. Save and switch Claude runtime configs for different scenarios.",

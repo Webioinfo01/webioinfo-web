@@ -10,6 +10,7 @@ const { title, subtitle, projects } = Astro.props;
 const cards = [
   { key: 'aweskill', color: 'pink', icon: '📦', rotate: '-2deg', tapeRotate: '-2deg', href: 'https://aweskill.webioinfo.top/' },
   { key: 'awescholar', color: 'sky', icon: '📚', rotate: '1deg', tapeRotate: '-3deg', href: 'https://github.com/mugpeng/awescholar' },
+  { key: 'aweshelf', color: 'sage', icon: '🔖', rotate: '-1.5deg', tapeRotate: '2deg', href: 'https://github.com/Webioinfo01/aweshelf' },
   { key: 'aweswitch', color: 'lavender', icon: '🔀', rotate: '1.5deg', tapeRotate: '3deg', href: 'https://github.com/Webioinfo01/aweswitch' },
   { key: 'aweteam', color: 'mint', icon: '👥', rotate: '-1deg', tapeRotate: '-4deg', href: 'https://github.com/Webioinfo01/aweteam' },
   { key: 'awecolor', color: 'peach', icon: '🎨', rotate: '2deg', tapeRotate: '1deg', href: 'https://github.com/Webioinfo01/awecolor' },
@@ -57,11 +58,12 @@ const cards = [
     .sticker-grid > :nth-child(3) {
       grid-column: span 2;
     }
-    .sticker-grid > :nth-child(4) {
-      grid-column: 2 / span 2;
-    }
+    .sticker-grid > :nth-child(4),
     .sticker-grid > :nth-child(5) {
-      grid-column: 4 / span 2;
+      grid-column: span 2;
+    }
+    .sticker-grid > :nth-child(6) {
+      grid-column: 3 / span 2;
     }
   }
 </style>

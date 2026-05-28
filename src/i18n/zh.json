@@ -69,6 +69,13 @@
       "tags": ["科研", "CLI"],
       "link": "了解更多"
     },
+    "aweshelf": {
+      "name": "aweshelf",
+      "desc": "会话书签管理器。收藏、分类、恢复 AI 编程会话，支持 aweswitch 配置恢复。",
+      "detail": "收藏 Claude Code 和 Codex 会话，添加标题和分类。支持 aweswitch 配置恢复，TUI 交互式浏览。",
+      "tags": ["会话管理", "CLI"],
+      "link": "了解更多"
+    },
     "aweswitch": {
       "name": "aweswitch",
       "desc": "Agent 配置切换器。为不同场景保存和切换 Claude 运行时配置。",
