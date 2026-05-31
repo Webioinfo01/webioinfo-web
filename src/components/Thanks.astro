@@ -7,21 +7,21 @@ const { t } = Astro.props;
 ---
 
 <div class="mt-16">
-  <h2 class="font-display text-2xl font-semibold mb-8 text-center">{t.thanks_title}</h2>
-  <div class="desk p-10 md:p-14">
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+  <h2 class="font-display text-xl font-semibold mb-6 text-center">{t.thanks_title}</h2>
+  <div class="desk p-8 md:p-10">
+    <div class="flex flex-wrap items-start justify-center gap-4">
       <a
         href="https://mimo.xiaomi.com/"
         target="_blank"
         rel="noopener"
-        class="sticker sticker--sky flex flex-col items-center text-center"
-        style="transform: rotate(-0.5deg);"
+        class="sticker sticker--sky flex flex-col items-center text-center mt-2"
+        style="transform: rotate(-3deg);"
       >
         <div class="sticker-tape"></div>
-        <div class="sticker-body items-center">
-          <img src="/logos/mimo.png" alt="MIMO by Xiaomi" class="w-40 h-auto mb-4 object-contain" />
-          <h3 class="font-display text-lg font-semibold mb-1">{t.mimo_name}</h3>
-          <p class="text-sm" style="color: var(--t-text-light);">{t.mimo_desc}</p>
+        <div class="sticker-body items-center px-4 py-3">
+          <img src="/logos/mimo.png" alt="MIMO by Xiaomi" class="w-20 h-auto mb-2 object-contain" />
+          <h3 class="font-display text-sm font-semibold mb-0.5">{t.mimo_name}</h3>
+          <p class="text-xs" style="color: var(--t-text-light);">{t.mimo_desc}</p>
         </div>
       </a>
 
@@ -29,14 +29,14 @@ const { t } = Astro.props;
         href="https://www.bigmodel.cn/glm-coding"
         target="_blank"
         rel="noopener"
-        class="sticker sticker--lavender flex flex-col items-center text-center"
-        style="transform: rotate(0.3deg);"
+        class="sticker sticker--lavender flex flex-col items-center text-center -mt-1"
+        style="transform: rotate(1.5deg);"
       >
         <div class="sticker-tape"></div>
-        <div class="sticker-body items-center">
-          <img src="/logos/bigmodel.png" alt="BIGMODEL GLM" class="w-40 h-auto mb-4 object-contain" />
-          <h3 class="font-display text-lg font-semibold mb-1">{t.glm_name}</h3>
-          <p class="text-sm" style="color: var(--t-text-light);">{t.glm_desc}</p>
+        <div class="sticker-body items-center px-4 py-3">
+          <img src="/logos/bigmodel.png" alt="BIGMODEL GLM" class="w-20 h-auto mb-2 object-contain" />
+          <h3 class="font-display text-sm font-semibold mb-0.5">{t.glm_name}</h3>
+          <p class="text-xs" style="color: var(--t-text-light);">{t.glm_desc}</p>
         </div>
       </a>
 
@@ -44,20 +44,81 @@ const { t } = Astro.props;
         href="https://www.sensenova.cn/"
         target="_blank"
         rel="noopener"
-        class="sticker sticker--mint flex flex-col items-center text-center"
-        style="transform: rotate(-0.3deg);"
+        class="sticker sticker--mint flex flex-col items-center text-center mt-4"
+        style="transform: rotate(4deg);"
       >
         <div class="sticker-tape"></div>
-        <div class="sticker-body items-center">
-          <img src="/logos/sensenova.png" alt="SenseNova" class="w-40 h-auto mb-4 object-contain" />
-          <h3 class="font-display text-lg font-semibold mb-1">{t.sensenova_name}</h3>
-          <p class="text-sm" style="color: var(--t-text-light);">{t.sensenova_desc}</p>
+        <div class="sticker-body items-center px-4 py-3">
+          <img src="/logos/sensenova.png" alt="SenseNova" class="w-20 h-auto mb-2 object-contain" />
+          <h3 class="font-display text-sm font-semibold mb-0.5">{t.sensenova_name}</h3>
+          <p class="text-xs" style="color: var(--t-text-light);">{t.sensenova_desc}</p>
+        </div>
+      </a>
+
+      <a
+        href="https://platform.deepseek.com/"
+        target="_blank"
+        rel="noopener"
+        class="sticker sticker--pink flex flex-col items-center text-center -mt-2"
+        style="transform: rotate(-2deg);"
+      >
+        <div class="sticker-tape"></div>
+        <div class="sticker-body items-center px-4 py-3">
+          <img src="/logos/deepseek-v4-flash.png" alt="DeepSeek" class="w-20 h-auto mb-2 object-contain" />
+          <h3 class="font-display text-sm font-semibold mb-0.5">{t.deepseek_name}</h3>
+          <p class="text-xs" style="color: var(--t-text-light);">{t.deepseek_desc}</p>
+        </div>
+      </a>
+
+      <a
+        href="https://aistudio.google.com/"
+        target="_blank"
+        rel="noopener"
+        class="sticker sticker--yellow flex flex-col items-center text-center mt-3"
+        style="transform: rotate(2.5deg);"
+      >
+        <div class="sticker-tape"></div>
+        <div class="sticker-body items-center px-4 py-3">
+          <img src="/logos/gemini-3.1-pro-preview.png" alt="Gemini" class="w-20 h-auto mb-2 object-contain" />
+          <h3 class="font-display text-sm font-semibold mb-0.5">{t.gemini_name}</h3>
+          <p class="text-xs" style="color: var(--t-text-light);">{t.gemini_desc}</p>
+        </div>
+      </a>
+
+      <a
+        href="https://www.minimaxi.com/"
+        target="_blank"
+        rel="noopener"
+        class="sticker sticker--peach flex flex-col items-center text-center -mt-1"
+        style="transform: rotate(-1.5deg);"
+      >
+        <div class="sticker-tape"></div>
+        <div class="sticker-body items-center px-4 py-3">
+          <img src="/logos/minimax-m2.7.png" alt="MiniMax" class="w-20 h-auto mb-2 object-contain" />
+          <h3 class="font-display text-sm font-semibold mb-0.5">{t.minimax_name}</h3>
+          <p class="text-xs" style="color: var(--t-text-light);">{t.minimax_desc}</p>
+        </div>
+      </a>
+
+      <a
+        href="https://platform.openai.com/"
+        target="_blank"
+        rel="noopener"
+        class="sticker sticker--coral flex flex-col items-center text-center mt-2"
+        style="transform: rotate(3deg);"
+      >
+        <div class="sticker-tape"></div>
+        <div class="sticker-body items-center px-4 py-3">
+          <img src="/logos/openai.svg" alt="OpenAI" class="w-20 h-auto mb-2 object-contain" />
+          <h3 class="font-display text-sm font-semibold mb-0.5">{t.gpt_name}</h3>
+          <p class="text-xs" style="color: var(--t-text-light);">{t.gpt_desc}</p>
         </div>
       </a>
     </div>
 
-    <p class="text-center mt-10 text-sm" style="color: var(--t-text-light); opacity: 0.7;">
-      {t.thanks_note}
-    </p>
+    <div class="text-center mt-6 space-y-1">
+      <p class="text-xs" style="color: var(--t-text-light); opacity: 0.7;">{t.thanks_note}</p>
+      <p class="text-xs" style="color: var(--t-text-light); opacity: 0.7;" set:html={t.thanks_note2} />
+    </div>
   </div>
 </div>

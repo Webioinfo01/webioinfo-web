@@ -60,7 +60,16 @@
   "glm_desc": "Zhipu AI · GLM-5.1",
   "sensenova_name": "SenseNova",
   "sensenova_desc": "SenseTime · 6.7 Flash-Lite",
+  "deepseek_name": "DeepSeek",
+  "deepseek_desc": "DeepSeek · V4 Flash",
+  "gemini_name": "Gemini",
+  "gemini_desc": "Google · 3.1 Pro Preview",
+  "minimax_name": "MiniMax",
+  "minimax_desc": "MiniMax · M2.7",
+  "gpt_name": "GPT",
+  "gpt_desc": "OpenAI · GPT-5.5",
   "thanks_note": "Thanks to the above models for their AI support",
+  "thanks_note2": "Special thanks to <b>MiMo</b> and <b>SenseNova</b> for their free developer token programs",
   "footer": "Open source, built with love",
   "projects": {
     "aweskill": {

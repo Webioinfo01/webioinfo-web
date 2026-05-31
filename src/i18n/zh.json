@@ -60,7 +60,16 @@
   "glm_desc": "智谱 AI · GLM-5.1",
   "sensenova_name": "SenseNova",
   "sensenova_desc": "商汤科技 · 6.7 Flash-Lite",
+  "deepseek_name": "DeepSeek",
+  "deepseek_desc": "DeepSeek · V4 Flash",
+  "gemini_name": "Gemini",
+  "gemini_desc": "Google · 3.1 Pro Preview",
+  "minimax_name": "MiniMax",
+  "minimax_desc": "MiniMax · M2.7",
+  "gpt_name": "GPT",
+  "gpt_desc": "OpenAI · GPT-5.5",
   "thanks_note": "感谢以上模型提供 AI 技术支持",
+  "thanks_note2": "特别感谢 <b>MiMo</b> 和 <b>SenseNova</b> 提供的开发者免费 Token 计划",
   "footer": "开源，用爱构建",
   "projects": {
     "aweskill": {
