@@ -1,0 +1,63 @@
+---
+interface Props {
+  t: any;
+}
+
+const { t } = Astro.props;
+---
+
+<div class="mt-16">
+  <h2 class="font-display text-2xl font-semibold mb-8 text-center">{t.thanks_title}</h2>
+  <div class="desk p-10 md:p-14">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <a
+        href="https://mimo.xiaomi.com/"
+        target="_blank"
+        rel="noopener"
+        class="sticker sticker--sky flex flex-col items-center text-center"
+        style="transform: rotate(-0.5deg);"
+      >
+        <div class="sticker-tape"></div>
+        <div class="sticker-body items-center">
+          <img src="/logos/mimo.png" alt="MIMO by Xiaomi" class="w-40 h-auto mb-4 object-contain" />
+          <h3 class="font-display text-lg font-semibold mb-1">{t.mimo_name}</h3>
+          <p class="text-sm" style="color: var(--t-text-light);">{t.mimo_desc}</p>
+        </div>
+      </a>
+
+      <a
+        href="https://www.bigmodel.cn/glm-coding"
+        target="_blank"
+        rel="noopener"
+        class="sticker sticker--lavender flex flex-col items-center text-center"
+        style="transform: rotate(0.3deg);"
+      >
+        <div class="sticker-tape"></div>
+        <div class="sticker-body items-center">
+          <img src="/logos/bigmodel.png" alt="BIGMODEL GLM" class="w-40 h-auto mb-4 object-contain" />
+          <h3 class="font-display text-lg font-semibold mb-1">{t.glm_name}</h3>
+          <p class="text-sm" style="color: var(--t-text-light);">{t.glm_desc}</p>
+        </div>
+      </a>
+
+      <a
+        href="https://www.sensenova.cn/"
+        target="_blank"
+        rel="noopener"
+        class="sticker sticker--mint flex flex-col items-center text-center"
+        style="transform: rotate(-0.3deg);"
+      >
+        <div class="sticker-tape"></div>
+        <div class="sticker-body items-center">
+          <img src="/logos/sensenova.png" alt="SenseNova" class="w-40 h-auto mb-4 object-contain" />
+          <h3 class="font-display text-lg font-semibold mb-1">{t.sensenova_name}</h3>
+          <p class="text-sm" style="color: var(--t-text-light);">{t.sensenova_desc}</p>
+        </div>
+      </a>
+    </div>
+
+    <p class="text-center mt-10 text-sm" style="color: var(--t-text-light); opacity: 0.7;">
+      {t.thanks_note}
+    </p>
+  </div>
+</div>

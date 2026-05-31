@@ -53,6 +53,14 @@
       "wechat": "关注微信公众号"
     }
   },
+  "thanks_title": "致谢",
+  "mimo_name": "MIMO",
+  "mimo_desc": "小米 AI 模型 · v2.5 Pro",
+  "glm_name": "GLM",
+  "glm_desc": "智谱 AI · GLM-5.1",
+  "sensenova_name": "SenseNova",
+  "sensenova_desc": "商汤科技 · 6.7 Flash-Lite",
+  "thanks_note": "感谢以上模型提供 AI 技术支持",
   "footer": "开源，用爱构建",
   "projects": {
     "aweskill": {

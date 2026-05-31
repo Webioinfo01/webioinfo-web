@@ -53,6 +53,14 @@
       "wechat": "Follow WeChat Official"
     }
   },
+  "thanks_title": "Acknowledgments",
+  "mimo_name": "MIMO",
+  "mimo_desc": "Xiaomi AI Model · v2.5 Pro",
+  "glm_name": "GLM",
+  "glm_desc": "Zhipu AI · GLM-5.1",
+  "sensenova_name": "SenseNova",
+  "sensenova_desc": "SenseTime · 6.7 Flash-Lite",
+  "thanks_note": "Thanks to the above models for their AI support",
   "footer": "Open source, built with love",
   "projects": {
     "aweskill": {
