@@ -147,17 +147,30 @@
   border-radius: 12px;
   font-size: 11px;
   font-weight: 600;
+  background: rgba(255,255,255,0.12);
+}
+
+.light .sticker-tag {
   background: rgba(255,255,255,0.5);
 }
 
-.sticker--pink .sticker-tag { color: #C0506A; }
-.sticker--lavender .sticker-tag { color: #9B7FD0; }
-.sticker--mint .sticker-tag { color: #5AB88A; }
-.sticker--peach .sticker-tag { color: #D08A4E; }
-.sticker--yellow .sticker-tag { color: #B89A30; }
-.sticker--sky .sticker-tag { color: #4A7AAA; }
-.sticker--coral .sticker-tag { color: #C05050; }
-.sticker--sage .sticker-tag { color: #5A8A5A; }
+.sticker--pink .sticker-tag { color: #FF9AB5; }
+.sticker--lavender .sticker-tag { color: #C9ABF5; }
+.sticker--mint .sticker-tag { color: #7DD4A8; }
+.sticker--peach .sticker-tag { color: #F0A86A; }
+.sticker--yellow .sticker-tag { color: #E0C850; }
+.sticker--sky .sticker-tag { color: #7AB0D8; }
+.sticker--coral .sticker-tag { color: #F08080; }
+.sticker--sage .sticker-tag { color: #7DB87D; }
+
+.light .sticker--pink .sticker-tag { color: #C0506A; }
+.light .sticker--lavender .sticker-tag { color: #9B7FD0; }
+.light .sticker--mint .sticker-tag { color: #5AB88A; }
+.light .sticker--peach .sticker-tag { color: #D08A4E; }
+.light .sticker--yellow .sticker-tag { color: #B89A30; }
+.light .sticker--sky .sticker-tag { color: #4A7AAA; }
+.light .sticker--coral .sticker-tag { color: #C05050; }
+.light .sticker--sage .sticker-tag { color: #5A8A5A; }
 
 .sticker-link {
   font-family: var(--font-display);

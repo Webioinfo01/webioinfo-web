@@ -141,6 +141,6 @@ The hero tagline uses a three-color gradient (pink → lavender → mint) clippe
 - **Do** maintain the bilingual (en/zh) structure when adding pages.
 - **Do** use Sora for all text — headings, body, and labels.
 - **Don't** use pure black (#000) anywhere — always the warm brown text colors.
-- **Don't** add client-side JavaScript — this is a zero-JS static site.
+- **Don't** add client-side JavaScript beyond the theme toggle (localStorage + class toggle). No framework runtime, no hydration.
 - **Don't** break the single-column, centered layout pattern.
 - **Don't** introduce cold or saturated colors — the palette should always feel like a creative desk, not a dashboard.

@@ -1,43 +1,48 @@
-# Astro Starter Kit: Minimal
+<div align="center">
+  <h1>webioinfo-web</h1>
+  <p><strong>Official website for webioinfo — AI developer tools organization</strong></p>
+  <p>Warm, playful static site showcasing open-source AI CLI tools. Built with Astro, Tailwind CSS, and a "creative desk" visual identity.</p>
+  <p>
+    <strong>English</strong> &middot;
+    <a href="./README_cn.md">简体中文</a>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/platform-web-334155?style=flat-square" alt="Platform">
+    <img src="https://img.shields.io/badge/framework-Astro_6-FF5D01?style=flat-square" alt="Astro">
+    <img src="https://img.shields.io/badge/style-Tailwind_CSS_4-38B2AC?style=flat-square" alt="Tailwind">
+    <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License">
+  </p>
+</div>
 
-```sh
-npm create astro@latest -- --template minimal
+> Let AI be your dev team.
+
+## Tech Stack
+
+- **Astro 6** — static site generation, zero JS by default
+- **Tailwind CSS 4** — utility-first styling
+- **Bilingual** — English + Chinese via JSON i18n
+
+## Development
+
+```bash
+npm install
+npm run dev       # http://localhost:4321
+npm run build     # production build to dist/
+npm run preview   # preview production build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Project Structure
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+src/
+  components/     # Header, Hero, StickerMap, ProjectCard, Footer, Thanks
+  i18n/           # en.json, zh.json
+  layouts/        # Layout.astro (HTML shell, fonts, theme toggle)
+  pages/          # index, about, projects (+ zh/ mirrors)
+  styles/         # global.css (theme variables, sticker/desk styles)
+public/           # static assets (logo, QR code, partner logos)
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Deployment
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Pushed to `main` triggers GitHub Actions → GitHub Pages. Custom domain: `we.webioinfo.top`.

@@ -7,8 +7,8 @@ import Footer from '../components/Footer.astro';
 import t from '../i18n/en.json';
 ---
 
-<Layout title="webioinfo" lang="en">
-  <Header t={t} lang="en" />
+<Layout title="webioinfo" lang="en" description={t.site.description}>
+  <Header t={t} lang="en" current="home" />
   <Hero t={{ ...t.hero, tagline: t.site.tagline, description: t.site.description }} />
   <StickerMap title={t.home_projects.title} subtitle={t.home_projects.subtitle} projects={t.projects} />
   <Footer t={t.footer} />
