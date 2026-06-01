@@ -2,7 +2,7 @@
 interface Props {
   t: any;
   lang: string;
-  current?: 'home' | 'about' | 'projects';
+  current?: 'home' | 'about';
 }
 
 const { t, lang, current } = Astro.props;
@@ -31,10 +31,6 @@ langHref = withBase(langHref);
     <nav class="flex items-center gap-1.5 sm:gap-3">
       <a href={homeHref} class:list={["px-2 py-1 text-sm font-medium transition-colors rounded-md hover:bg-primary/10", current === 'home' ? "font-semibold" : ""]} style={current === 'home' ? "color: var(--t-text);" : "color: var(--t-text-light);"}>
         {lang === 'zh' ? '首页' : 'Home'}
-      </a>
-      <div class="w-px h-5" style="background: var(--t-border);"></div>
-      <a href={withBase(lang === 'zh' ? '/zh/projects' : '/projects')} class:list={["px-2 py-1 text-sm font-medium transition-colors rounded-md hover:bg-primary/10", current === 'projects' ? "font-semibold" : ""]} style={current === 'projects' ? "color: var(--t-text);" : "color: var(--t-text-light);"}>
-        {lang === 'zh' ? '项目' : 'Projects'}
       </a>
       <div class="w-px h-5" style="background: var(--t-border);"></div>
       <a href={withBase(lang === 'zh' ? '/zh/about' : '/about')} class:list={["px-2 py-1 text-sm font-medium transition-colors rounded-md hover:bg-primary/10", current === 'about' ? "font-semibold" : ""]} style={current === 'about' ? "color: var(--t-text);" : "color: var(--t-text-light);"}>

@@ -6,20 +6,14 @@
   },
   "nav": {
     "home": "Home",
-    "projects": "Projects",
     "github": "GitHub"
   },
   "hero": {
-    "cta_projects": "Explore Projects",
     "cta_github": "GitHub"
   },
   "home_projects": {
     "title": "Our Projects",
     "subtitle": "Six open-source tools covering the AI developer workflow"
-  },
-  "projects_page": {
-    "title": "All Projects",
-    "subtitle": "Learn what each tool does and when to use it"
   },
   "about_page": {
     "title": "About Us",
@@ -75,42 +69,36 @@
     "aweskill": {
       "name": "aweskill",
       "desc": "AI agent skill pack manager. Install, bundle, and distribute Claude Skills in one command.",
-      "detail": "Manage your Claude agent capabilities like npm packages — install, bundle, and distribute. Cross-agent compatible with built-in health checks.",
       "tags": ["Skill Manager", "CLI"],
       "link": "Learn more"
     },
     "awescholar": {
       "name": "awescholar",
       "desc": "Scientific literature discovery and curation CLI. Search, annotate, filter, and report on academic papers.",
-      "detail": "Automated paper curation workflow: query Semantic Scholar, annotate with LLM, filter by quality, generate Markdown reports.",
       "tags": ["Research", "CLI"],
       "link": "Learn more"
     },
     "aweshelf": {
       "name": "aweshelf",
       "desc": "Session bookmark manager. Save, categorize, and restore AI coding sessions with aweswitch profiles.",
-      "detail": "Bookmark Claude Code and Codex sessions with title and category. Resume sessions with aweswitch profile restoration, browse interactively in a TUI.",
       "tags": ["Session", "CLI"],
       "link": "Learn more"
     },
     "aweswitch": {
       "name": "aweswitch",
       "desc": "Agent config switcher. Save and switch Claude runtime configs for different scenarios.",
-      "detail": "Save independent Claude Code configs per project or scenario. Switch models, permissions, and env vars in one step.",
       "tags": ["Config Manager", "Profile"],
       "link": "Learn more"
     },
     "aweteam": {
       "name": "aweteam",
       "desc": "AI coding team coordinator. Launch leader-worker multi-agent collaboration in tmux.",
-      "detail": "Launch leader-worker multi-agent collaboration in tmux. Conversations stay in their own panes — traceable and reviewable.",
       "tags": ["Multi-Agent", "tmux"],
       "link": "Learn more"
     },
     "awecolor": {
       "name": "awecolor",
       "desc": "Colorize hex color codes in text. Preview and beautify color values in your terminal.",
-      "detail": "Instantly preview hex color codes in your terminal output. Supports named colors and custom palettes.",
       "tags": ["CLI", "Colors"],
       "link": "Learn more"
     }
